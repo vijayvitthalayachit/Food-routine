@@ -1,5 +1,5 @@
-// Android plugins (AGP, KSP, Compose compiler) are applied only in :app so
-// that :core remains buildable on machines without the Android SDK.
-plugins {
-    alias(libs.plugins.kotlin.jvm) apply false
-}
+// Intentionally empty: plugins are applied per-module (:core applies the
+// Kotlin JVM plugin; :app applies AGP, Kotlin Android, Compose and KSP).
+// Declaring them here would (a) force Android Gradle Plugin resolution on
+// machines without the Android SDK and (b) leak the Kotlin plugin onto the
+// root classpath, clashing with :app's versioned kotlin.android request.
