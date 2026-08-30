@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Food Routine</string>
+    <string name="tab_today">Today</string>
+    <string name="tab_plan">Plan</string>
+    <string name="tab_recipes">Recipes</string>
+    <string name="tab_grocery">Grocery</string>
+    <string name="tab_settings">Settings</string>
+    <string name="notification_channel_name">Daily grocery &amp; prep reminders</string>
+    <string name="notification_channel_desc">Reminds you what to buy, soak and sprout for upcoming meals</string>
+</resources>
